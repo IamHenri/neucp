@@ -1,0 +1,104 @@
+:root {
+  --bg: #0B1220;
+  --panel: #121B2E;
+  --border: rgba(255,255,255,.08);
+  --text: #EDEFF3;
+  --muted: #9AA1AC;
+  --accent: #C9A227;   /* laiton — série principale */
+  --accent2: #2FA8A0;  /* teal — série secondaire */
+  --radius: 8px;
+  --font-sans: "IBM Plex Sans", -apple-system, Segoe UI, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+}
+
+.dash-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.indicator-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  margin-bottom: 24px;
+}
+.indicator-full { width: 100%; }
+
+.indicator-card h2 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.indicator-card .indicator-sub {
+  color: var(--muted);
+  font-size: .85rem;
+  margin: 0 0 16px;
+  max-width: 70ch;
+}
+
+/* Filtres */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  background: rgba(255,255,255,.03);
+  border-radius: 6px;
+}
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 140px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.filter-group legend, .filter-label {
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--muted);
+  padding: 0;
+  margin-bottom: 2px;
+}
+.filter-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .85rem;
+  cursor: pointer;
+}
+.filter-check input { accent-color: var(--accent); }
+.filter-select {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 7px 10px;
+  font-size: .85rem;
+}
+.filter-select:focus, .filter-check input:focus-visible {
+  outline: 2px solid var(--accent2);
+  outline-offset: 2px;
+}
+
+.chart-wrap { position: relative; height: 380px; }
+
+@media (max-width: 700px) {
+  .filters { flex-direction: column; gap: 14px; }
+  .chart-wrap { height: 300px; }
+}
