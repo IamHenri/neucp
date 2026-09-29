@@ -4,7 +4,7 @@
 window.NEUCP = window.NEUCP || {};
 
 NEUCP.loadData = function (url) {
-  url = url || "./tcn_historique.json";
+  url = url || window.NEUCP_DATA_URL || "./tcn_historique.json";
   if (!NEUCP._dataPromise) {
     NEUCP._dataPromise = fetch(url).then(function (r) {
       if (!r.ok) throw new Error("HTTP " + r.status);

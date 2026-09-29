@@ -13,6 +13,8 @@ defaults:
     values:
       layout: "default"
 
+permalink: /actus/:year/:month/:day/:title/
+
 exclude:
   - README.md
   - vendor

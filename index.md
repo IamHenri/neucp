@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: "NEU CP / NEU MTN — Trésorerie en temps réel"
 permalink: /
 ---
