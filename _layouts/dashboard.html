@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | default: site.title }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/dashboard.css' | relative_url }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+</head>
+<body>
+  {% include nav.html %}
+  <main class="dash-shell">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+
+  <script>window.NEUCP_DATA_URL = "{{ '/tcn_historique.json' | relative_url }}";</script>
+  <script src="{{ '/assets/js/data-loader.js' | relative_url }}"></script>
+  {% for ind in page.indicators %}
+  <script src="{{ ind | relative_url }}"></script>
+  {% endfor %}
+</body>
+</html>

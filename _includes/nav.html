@@ -1,0 +1,8 @@
+<header class="site-header">
+  <a class="wordmark" href="{{ '/' | relative_url }}">NEU CP · NEU MTN</a>
+  <nav>
+    <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Accueil</a>
+    <a href="{{ '/dashboard/' | relative_url }}"{% if page.url == '/dashboard/' %} class="active"{% endif %}>Dashboard</a>
+    <a href="{{ '/actus/' | relative_url }}"{% if page.url == '/actus/' or page.layout == 'actus' %} class="active"{% endif %}>Actus</a>
+  </nav>
+</header>

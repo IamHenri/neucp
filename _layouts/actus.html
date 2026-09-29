@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} — {{ site.title }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="wrap">
+    {% include nav.html %}
+    <main>
+      <article>
+        <p class="section-lede" style="margin-bottom:6px">{{ page.date | date: "%d %B %Y" }}</p>
+        <h1 style="font-family:var(--serif);font-weight:500">{{ page.title }}</h1>
+        {{ content }}
+      </article>
+    </main>
+    {% include footer.html %}
+  </div>
+</body>
+</html>

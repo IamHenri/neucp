@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chart.js/4.4.4/chart.umd.min.js"></script>
 </head>
 <body>
   <div class="wrap">
@@ -16,7 +17,6 @@
       <a class="wordmark" href="{{ '/' | relative_url }}">NEU CP · NEU MTN</a>
       <nav>
         <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Accueil</a>
-        <a href="{{ '/dashboard-exemple/' | relative_url }}"{% if page.url contains 'dashboard-exemple' %} class="active"{% endif %}>Exemple de tableau de bord</a>
         <a href="{{ '/dashboard/' | relative_url }}"{% if page.url contains 'dashboard' and page.url != '/dashboard-exemple/' %} class="active"{% endif %}>Dashboard</a>
       </nav>
     </header>
