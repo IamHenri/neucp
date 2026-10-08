@@ -102,3 +102,9 @@ body {
   .filters { flex-direction: column; gap: 14px; }
   .chart-wrap { height: 300px; }
 }
+.filter-value {
+  font-size: .85rem;
+  color: var(--text);
+  padding: 7px 0;
+}
+.filter-select-wide { max-width: 300px; }
