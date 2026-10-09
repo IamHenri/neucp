@@ -108,3 +108,5 @@ body {
   padding: 7px 0;
 }
 .filter-select-wide { max-width: 300px; }
+.chart-wrap-tall { height: 460px; }
+@media (max-width: 700px) { .chart-wrap-tall { height: 380px; } }
