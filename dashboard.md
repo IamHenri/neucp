@@ -9,9 +9,9 @@ indicators:
   - /assets/js/indicators/indicator-05-plus-gros-encours.js
   
 ---
-
+<!-- 
 <section id="indicator-01" class="indicator-card indicator-full"></section>
-<section id="indicator-02" class="indicator-card indicator-full"></section>
+<section id="indicator-02" class="indicator-card indicator-full"></section> -->
 <section id="indicator-03" class="indicator-card indicator-full"></section>
 <section id="indicator-04" class="indicator-card indicator-full"></section>
 <section id="indicator-05" class="indicator-card indicator-full"></section>
