@@ -84,5 +84,5 @@ permalink: /
 <section>
   <h2>Accès sur abonnement</h2>
   <p class="section-lede">Le service est en cours de finalisation. Les sociétés de gestion et équipes de trésorerie intéressées par un accès anticipé peuvent nous écrire directement.</p>
-  <a class="btn btn-primary" href="mailto:contact@example.com">Demander un accès</a>
+  <a class="btn btn-primary" href="designerfonctionnel@gmail.com">Demander un accès</a>
 </section>
