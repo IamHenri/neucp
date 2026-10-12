@@ -4,7 +4,7 @@
 // Axe horizontal triable (par montant ou ordre alphabétique) ; filtres par zone
 // géographique et catégorie d'émetteur : aucune case cochée = pas de restriction.
 (function () {
-  var CONTAINER_ID = "indicator-05";
+  var CONTAINER_ID = "indicator-06";
   var TOP_N = 12; // nombre d'émetteurs affichés
 
   function fmt(v) {

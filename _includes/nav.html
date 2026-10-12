@@ -4,5 +4,6 @@
     <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Accueil</a>
     <a href="{{ '/dashboard/' | relative_url }}"{% if page.url == '/dashboard/' %} class="active"{% endif %}>Dashboard</a>
     <a href="{{ '/actus/' | relative_url }}"{% if page.url == '/actus/' or page.layout == 'actus' %} class="active"{% endif %}>Actus</a>
+    <a href="{{ '/contact/' | relative_url }}"{% if page.url == '/contact/' %} class="active"{% endif %}>Contact</a>
   </nav>
 </header>

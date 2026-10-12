@@ -3,7 +3,7 @@
 // Filtrable par type_tcn (cases à cocher) et devise (liste déroulante, EUR par défaut).
 // La catégorie et la zone géographique de l'émetteur sont affichées en libellé.
 (function () {
-  var CONTAINER_ID = "indicator-04";
+  var CONTAINER_ID = "indicator-03";
 
   function setText(el, value) {
     el.textContent = value != null ? value : "—";

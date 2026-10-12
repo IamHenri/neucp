@@ -1,7 +1,7 @@
 title: "NEU CP / NEU MTN — Trésorerie en temps réel"
 description: "Tableaux de bord de suivi de trésorerie pour le marché des titres de créances négociables (NEU CP / NEU MTN), construits à partir des données Banque de France."
 baseurl: "/neucp"
-url: "https://iamhenri.github.io"
+url: "https://tcndata.fr"
 
 markdown: kramdown
 theme: null

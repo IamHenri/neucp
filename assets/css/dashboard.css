@@ -6,6 +6,8 @@
   --muted: #9AA1AC;
   --accent: #C9A227;   /* laiton — série principale */
   --accent2: #2FA8A0;  /* teal — série secondaire */
+  --accent3: #8A7BD1;  /* violet — troisième série */
+  --accent4: #D1704F;  /* orangé — taux de renouvellement */
   --radius: 8px;
   --font-sans: "IBM Plex Sans", -apple-system, Segoe UI, sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
@@ -108,5 +110,7 @@ body {
   padding: 7px 0;
 }
 .filter-select-wide { max-width: 300px; }
+.chart-wrap-tall { height: 460px; }
+@media (max-width: 700px) { .chart-wrap-tall { height: 380px; } }
 .chart-wrap-tall { height: 460px; }
 @media (max-width: 700px) { .chart-wrap-tall { height: 380px; } }

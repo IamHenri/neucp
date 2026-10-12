@@ -3,7 +3,7 @@
 // Filtrable par type_tcn (cases à cocher), categorie_emetteur (cases à cocher),
 // zone_geographique (cases à cocher) et devise (liste déroulante).
 (function () {
-  var CONTAINER_ID = "indicator-03";
+  var CONTAINER_ID = "indicator-04";
 
   function addCheckboxes(fieldset, values, name) {
     values.forEach(function (v, i) {
