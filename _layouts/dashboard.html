@@ -14,11 +14,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/2.2.0/chartjs-plugin-zoom.min.js"></script>
 </head>
 <body>
-  {% include nav.html %}
+  <div class="wrap">{% include nav.html %}</div>
   <main class="dash-shell">
     {{ content }}
   </main>
-  {% include footer.html %}
+  <div class="wrap">{% include footer.html %}</div>
 
   <script>window.NEUCP_DATA_URL = "{{ '/tcn_historique.json' | relative_url }}";</script>
   <script src="{{ '/assets/js/data-loader.js' | relative_url }}"></script>
