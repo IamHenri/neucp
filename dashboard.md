@@ -13,6 +13,8 @@ indicators:
   - /assets/js/indicators/indicator-07-profil-maturite.js
   - /assets/js/indicators/indicator-08-structure-stock.js
   - /assets/js/indicators/indicator-09-taux-emission.js
+  - /assets/js/indicators/indicator-10-ecart-estr.js
+  - /assets/js/indicators/indicator-11-ecart-btf.js
   
 ---
 <!-- 
@@ -25,6 +27,8 @@ indicators:
 <section id="indicator-07" class="indicator-card indicator-full"></section>
 <section id="indicator-08" class="indicator-card indicator-full"></section>
 <section id="indicator-09" class="indicator-card indicator-full"></section>
+<section id="indicator-10" class="indicator-card indicator-full"></section>
+<section id="indicator-11" class="indicator-card indicator-full"></section>
 
 <!-- Prochain indicateur : ajouter son fichier dans assets/js/indicators/,
      l'ajouter à la liste "indicators" ci-dessus, et ajouter sa <section> ici. -->

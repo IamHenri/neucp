@@ -48,3 +48,23 @@ NEUCP.loadTaux = function (url) {
   }
   return NEUCP._tauxPromise;
 };
+NEUCP.loadRefEstr = function (url) {
+  url = url || window.NEUCP_REF_ESTR_URL || "./ref_estr_mensuel.json";
+  if (!NEUCP._refEstrPromise) {
+    NEUCP._refEstrPromise = fetch(url).then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    });
+  }
+  return NEUCP._refEstrPromise;
+};
+NEUCP.loadRefBtf = function (url) {
+  url = url || window.NEUCP_REF_BTF_URL || "./ref_btf_mensuel.json";
+  if (!NEUCP._refBtfPromise) {
+    NEUCP._refBtfPromise = fetch(url).then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    });
+  }
+  return NEUCP._refBtfPromise;
+};
