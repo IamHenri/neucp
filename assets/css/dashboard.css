@@ -11,6 +11,16 @@
   --radius: 8px;
   --font-sans: "IBM Plex Sans", -apple-system, Segoe UI, sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
+  --taux-1: #6F7F96;   
+  --taux-7: #4C93C3;   
+  --taux-14: #2FA8A0;  
+  --taux-30: #58B77F;
+  --taux-60: #9DBF55;  
+  --taux-90: #C9A227;  
+  --taux-120: #D98A3D; 
+  --taux-180: #D1704F;
+  --taux-270: #C25E86; 
+  --taux-365: #8A7BD1;
 }
 
 * { box-sizing: border-box; }

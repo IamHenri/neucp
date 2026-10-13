@@ -38,3 +38,13 @@ NEUCP.sum = function (arr, f) {
 NEUCP.uniq = function (rows, field) {
   return [...new Set(rows.map(function (r) { return r[field]; }).filter(function (v) { return v != null; }))].sort();
 };
+NEUCP.loadTaux = function (url) {
+  url = url || window.NEUCP_TAUX_URL || "./tcn_taux_emission_mensuel.json";
+  if (!NEUCP._tauxPromise) {
+    NEUCP._tauxPromise = fetch(url).then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    });
+  }
+  return NEUCP._tauxPromise;
+};

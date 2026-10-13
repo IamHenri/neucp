@@ -21,6 +21,7 @@
   <div class="wrap">{% include footer.html %}</div>
 
   <script>window.NEUCP_DATA_URL = "{{ '/tcn_historique.json' | relative_url }}";</script>
+  <script>window.NEUCP_TAUX_URL = "{{ '/tcn_taux_emission_mensuel.json' | relative_url }}";</script>
   <script src="{{ '/assets/js/data-loader.js' | relative_url }}"></script>
   {% for ind in page.indicators %}
   <script src="{{ ind | relative_url }}"></script>
