@@ -130,6 +130,8 @@ section h2 {
 .kicker-list li { padding: 10px 0; border-top: 1px solid rgba(255,255,255,.08); }
 .kicker-list li:first-child { border-top: none; }
 .kicker-list strong { color: var(--paper); font-weight: 500; }
+.kicker-list .post-excerpt { margin: 6px 0 4px; max-width: 70ch; color: var(--paper-dim); font-size: .95rem; }
+.kicker-list .post-more { font-size: .9rem; color: var(--teal); }
 
 /* Example page */
 .figure { margin: 0 0 48px; }

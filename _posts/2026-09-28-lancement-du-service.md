@@ -1,6 +1,7 @@
 ---
 layout: actus
 title: "Le marché des NEU CP et NEU MTN, mois par mois"
+excerpt: "La Banque de France publie chaque mois les encours, les flux et les durées des titres de créances négociables. Ce site les transforme en graphiques."
 ---
 
 La Banque de France publie chaque mois les encours, les flux et les durées des titres de créances négociables. Ces fichiers sont bruts. Leur format change au fil du temps. Ce site les rassemble et les transforme en graphiques.

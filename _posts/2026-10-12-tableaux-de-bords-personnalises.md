@@ -1,6 +1,7 @@
 ---
 layout: actus
 title: "Des indicateurs NEU CP et NEU MTN adaptés à votre besoin"
+excerpt: "Le dashboard public est un exemple. Nous adaptons les indicateurs à votre périmètre et les installons sur votre site ou en accès privé à distance."
 ---
 
 Le dashboard public de ce site est un exemple. Il montre comment nous transformons les publications de la Banque de France en indicateurs lisibles. Il reste volontairement général. Chaque équipe suit pourtant ses propres émetteurs, ses propres maturités et ses propres questions.
