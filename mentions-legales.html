@@ -1,0 +1,94 @@
+---
+layout: home
+title: "Mentions légales"
+description: "Éditeur, hébergement, sources des données (Banque de France), traitements appliqués, limites et sources d'erreurs potentielles de tcndata.fr."
+permalink: /mentions-legales/
+---
+<h1 id="mentions-l-gales">Mentions légales</h1>
+<p>Dernière mise à jour de cette page : 23 octobre 2026.</p>
+<h2 id="1-diteur-du-site">1. Éditeur du site</h2>
+<p>Le site tcndata.fr est édité par :</p>
+<ul>
+<li><strong>Éditeur</strong> : Designer Fonctionnel, consultant indépendant</li>
+<li><strong>Statut</strong> : EURL</li>
+<li><strong>Adresse</strong> : 32 rue de Bagnolet, 75020 - Paris</li>
+<li><strong>SIRET</strong> : 80431080300015</li>
+<li><strong>TVA intracommunautaire</strong> : FR94804310803</li>
+<li><strong>Contact</strong> : contact@tcndata.fr</li>
+<li><strong>Directeur de la publication</strong> : <a href="https://github.com/IamHenri" target="_blank">Henri Lecaye</a></li>
+</ul>
+<h2 id="2-h-bergement">2. Hébergement</h2>
+<p>Le site public est hébergé par GitHub Pages :</p>
+<ul>
+<li><strong>Société</strong> : GitHub, Inc.</li>
+<li><strong>Adresse</strong> : 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</li>
+<li><strong>Site</strong> : <a href="https://github.com">github.com</a></li>
+</ul>
+<p>Le nom de domaine tcndata.fr est enregistré auprès de Gandi.</p>
+<h2 id="3-objet-du-site">3. Objet du site</h2>
+<p>tcndata.fr présente, sous forme de graphiques et de tableaux, les données publiques du marché français des titres de créances négociables (NEU CP et NEU MTN). Le site restitue ces données et calcule des indicateurs quantitatifs à partir d&#39;elles.</p>
+<p>Le site informe. Il ne note aucun émetteur et ne formule aucune recommandation d&#39;investissement.</p>
+<h2 id="4-source-des-donn-es-la-banque-de-france">4. Source des données : la Banque de France</h2>
+<p>La référence des données publiées sur tcndata.fr est la Banque de France.</p>
+<ul>
+<li><strong>Source principale</strong> : Banque de France, statistiques sur les titres de créances négociables (annexe mensuelle du marché des NEU CP et NEU MTN). <a href="https://www.banque-france.fr/fr/publications-et-statistiques/statistiques/les-statistiques-par-thematique/statistiques-etudes-tcn">Consulter la page des statistiques TCN</a>.</li>
+<li><strong>Origine</strong> : ces informations sont issues du site institutionnel de la Banque de France (www.banque-france.fr).</li>
+<li><strong>Dernière mise à jour des données</strong> : {{ site.data_as_of | default: &quot;—&quot; }}.</li>
+<li><strong>Taux à l&#39;émission</strong> : Banque de France, fichier mensuel des taux moyens pondérés à l&#39;émission des NEU CP.</li>
+</ul>
+<p>La Banque de France autorise la réutilisation de ses données, y compris à des fins commerciales, sous conditions. tcndata.fr s&#39;engage à les respecter :</p>
+<ul>
+<li>ne pas falsifier ni fausser les données, et préserver leur intégrité ;</li>
+<li>citer la Banque de France comme source, avec la date de dernière mise à jour ;</li>
+<li>indiquer que les informations sont issues du site institutionnel de la Banque de France.</li>
+</ul>
+<p>Les conditions complètes figurent dans les <a href="https://www.banque-france.fr/fr/infos-legales">mentions légales de la Banque de France</a>.</p>
+<p>tcndata.fr est un service indépendant. Il n&#39;est pas affilié à la Banque de France. La Banque de France n&#39;est pas responsable des traitements, des calculs et des graphiques de ce site.</p>
+<p><strong>En cas de divergence entre une donnée de tcndata.fr et la même donnée publiée par la Banque de France, la donnée de la Banque de France fait foi.</strong></p>
+<h2 id="5-autres-sources">5. Autres sources</h2>
+<p>Les indicateurs d&#39;écart comparent les taux à l&#39;émission à des références de marché :</p>
+<ul>
+<li><strong>Banque centrale européenne</strong> : taux €STR, obtenu par l&#39;API SDMX de la BCE.</li>
+<li><strong>Agence France Trésor</strong> : résultats des adjudications de bons du Trésor à taux fixe (BTF).</li>
+</ul>
+<h2 id="6-ce-que-tcndata-fr-modifie-et-calcule">6. Ce que tcndata.fr modifie et calcule</h2>
+<ul>
+<li><strong>Montants et durées</strong> : tcndata.fr restitue les montants et les durées publiés par la Banque de France sans les modifier.</li>
+<li><strong>Un libellé harmonisé</strong> : les fichiers anciens nomment une catégorie « Emetteurs financiers », les fichiers récents « Emetteurs financiers (hors org. de titrisation) ». tcndata.fr utilise le second libellé pour toute la période, afin de garder une série homogène.</li>
+<li><strong>Assemblage</strong> : tcndata.fr réunit les fichiers mensuels en une base unique.</li>
+<li><strong>Valeurs calculées</strong> : tcndata.fr calcule des variations, des parts, des émissions nettes, des taux de renouvellement, des durées moyennes pondérées et des indicateurs de concentration. Ces valeurs sont signalées comme calculées, et leur formule figure sous le graphique concerné.</li>
+</ul>
+<h2 id="7-limites-et-sources-d-erreurs-potentielles">7. Limites et sources d&#39;erreurs potentielles</h2>
+<ul>
+<li><strong>Révisions de la source</strong> : la Banque de France peut corriger ou supprimer ses données sans préavis. Un fichier mensuel peut aussi modifier le mois précédent. Le fichier de septembre 2026, par exemple, indique un stock de fin août supérieur de 61 M€ à celui publié en août.</li>
+<li><strong>Série incomplète</strong> : le fichier d&#39;août 2024 manque dans la série. Aucune donnée n&#39;est affichée pour ce mois.</li>
+<li><strong>Évolution des fichiers</strong> : le format des fichiers change au fil du temps. Les colonnes relatives aux caractéristiques ESG n&#39;existent que depuis 2025.</li>
+<li><strong>Équivalent euro</strong> : la Banque de France fournit les montants convertis en euros. tcndata.fr ne les reconvertit pas. Les variations de change influencent les variations d&#39;encours.</li>
+<li><strong>Valeurs calculées</strong> : elles reposent sur les données publiées et sur des formules choisies par tcndata.fr. Les durées moyennes pondérées utilisent les moyennes publiées pour chaque ligne du fichier, et non les échéances une à une. D&#39;autres méthodes peuvent donner d&#39;autres résultats.</li>
+<li><strong>Émetteurs</strong> : tcndata.fr identifie un émetteur par son code. Les filiales d&#39;un même groupe comptent comme des émetteurs distincts. Une dénomination peut changer d&#39;un mois à l&#39;autre.</li>
+<li><strong>Écarts aux références de marché</strong> : ils dépendent de la manière d&#39;apparier des taux mensuels moyens et des références de marché observées à des dates précises.</li>
+<li><strong>Arrondis et unités</strong> : les montants sont en millions d&#39;euros (M€) sur les graphiques. Les arrondis peuvent créer de petits écarts entre deux totaux.</li>
+<li><strong>Traitement automatisé</strong> : tcndata.fr contrôle ses données à chaque mise à jour. Une erreur de traitement ou de transcription reste possible.</li>
+<li><strong>Délai de publication</strong> : les données sont mensuelles et publiées après la fin du mois. Elles ne décrivent pas la situation du jour.</li>
+</ul>
+<h2 id="8-absence-de-conseil-et-responsabilit-">8. Absence de conseil et responsabilité</h2>
+<p>Les informations de tcndata.fr sont fournies à titre indicatif. Elles ne constituent ni un conseil en investissement, ni une recommandation, ni une notation de crédit.</p>
+<p>L&#39;éditeur s&#39;efforce de publier des informations exactes et à jour. Il ne garantit ni leur exactitude ni leur exhaustivité. Il décline toute responsabilité pour les décisions prises sur le fondement de ces informations, pour leur interprétation et pour toute indisponibilité du site.</p>
+<p>L&#39;utilisateur vérifie les données auprès de la Banque de France avant toute décision.</p>
+<h2 id="9-propri-t-intellectuelle">9. Propriété intellectuelle</h2>
+<p>Les textes, la mise en forme et le code de tcndata.fr appartiennent à l&#39;éditeur. Toute reproduction sans autorisation est interdite, sous réserve des exceptions prévues par la loi.</p>
+<p>Les données issues de la Banque de France restent soumises aux conditions décrites à la section 4. tcndata.fr cite le nom de la Banque de France uniquement pour en indiquer la source et ne reproduit pas son logo.</p>
+<h2 id="10-donn-es-personnelles-et-cookies">10. Données personnelles et cookies</h2>
+<p>tcndata.fr ne dépose aucun cookie et n&#39;utilise aucun outil de mesure d&#39;audience.</p>
+<p>Pour s&#39;afficher, les pages chargent des ressources hébergées par des tiers :</p>
+<ul>
+<li>les polices IBM Plex, par Google Fonts (Google LLC) ;</li>
+<li>sur le dashboard, les bibliothèques de graphiques Chart.js, Hammer.js et chartjs-plugin-zoom, par cdnjs (Cloudflare, Inc.).</li>
+</ul>
+<p>Le navigateur du visiteur transmet alors son adresse IP à ces prestataires. GitHub, qui héberge le site, peut aussi enregistrer des journaux de connexion. Chacun de ces acteurs applique sa propre politique de confidentialité.</p>
+<p>Les messages envoyés à l&#39;adresse de contact servent uniquement à répondre à leur auteur et à suivre la relation commerciale. L&#39;éditeur est responsable de ce traitement. Chaque personne dispose d&#39;un droit d&#39;accès, de rectification, d&#39;effacement et d&#39;opposition, qu&#39;elle exerce par e-mail à l&#39;adresse de contact. Elle peut aussi déposer une réclamation auprès de la CNIL (<a href="https://www.cnil.fr">www.cnil.fr</a>).</p>
+<h2 id="11-liens-externes">11. Liens externes</h2>
+<p>tcndata.fr renvoie vers des sites tiers, notamment celui de la Banque de France. L&#39;éditeur ne contrôle pas ces sites et n&#39;est pas responsable de leur contenu.</p>
+<h2 id="12-droit-applicable">12. Droit applicable</h2>
+<p>Le droit français s&#39;applique à ce site. À défaut de règlement amiable, les tribunaux français sont compétents.</p>
+<p></div></p>
