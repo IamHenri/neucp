@@ -9,7 +9,7 @@ permalink: /
     <h1>La donnée de trésorerie NEU&nbsp;CP et NEU&nbsp;MTN, dans des graphiques à jour et prêts à l'emploi.</h1>
     <p class="lede">Chaque mois, la Banque de France publie l'encours, les flux et le profil de maturité de plusieurs centaines d'émetteurs de titres de créances négociables. Nous transformons ces fichiers en tableaux de bord consultables émetteur par émetteur, mis à jour et interrogeables à la volée.</p>
     <div class="cta-row">
-      <a class="btn btn-secondary" href="mailto:designerfonctionnel@gmail.com">Demander un accès</a>
+      <a class="btn btn-secondary" href="contact/">Demander un accès</a>
       <a class="btn btn-secondary" href="{{ '/dashboard/' | relative_url }}">Accès au dashboard</a>
     </div>
   </div>
